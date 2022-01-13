@@ -58,7 +58,8 @@ body {
 header {
   overflow: hidden;
   height: 100vh;
-  background: url("https://images.pexels.com/photos/5212649/pexels-photo-5212649.jpeg?auto=compress&cs=tinysrgb&h=650&w=940") no-repeat;
+  background: url("https://images.pexels.com/photos/5212649/pexels-photo-5212649.jpeg?auto=compress&cs=tinysrgb&h=650&w=940")
+    no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -105,13 +106,25 @@ section {
   justify-content: center;
 }
 
+.card {
+  height: 400px;
+}
+
 .card:hover {
-  box-shadow: -2px -1px 25px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: -2px -1px 25px -4px rgba(90, 213, 250, 0.75);
   transition: 0.5s;
+}
+
+.card-body {
+  overflow-y: scroll;
 }
 
 ol > li {
   list-style: disc;
+}
+
+input[type="file"] {
+  width: 90%;
 }
 
 span {
@@ -122,10 +135,12 @@ footer {
   background: var(--black);
   color: var(--light);
 }
+
 .footer-brand {
   width: 100px;
   height: 50px;
 }
+
 .footer-link {
   text-decoration: none;
   color: var(--light);
@@ -169,5 +184,9 @@ small > a:hover {
 
   header p {
     text-align: center;
+  }
+
+  input[type="file"] {
+    width: 70%;
   }
 }
