@@ -92,7 +92,7 @@ ol {
 
 .img0 {
   height: 300px;
-  width: 300px;
+  width: 500px;
 }
 
 .segmented {
@@ -180,17 +180,5 @@ small > a:hover {
 
   header p {
     text-align: center;
-  }
-
-  .img0 {
-    height: 300px;
-    width: 400px;
-  }
-}
-
-@media only screen and (min-width: 1280px) {
-  .img0 {
-    height: 300px;
-    width: 500px;
   }
 }
