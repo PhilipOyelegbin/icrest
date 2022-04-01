@@ -96,7 +96,7 @@ ol {
 }
 
 .segmented {
-  background: linear-gradient(45deg, var(--blue), var(--gray));
+  background: linear-gradient(45deg, #0ff0fb75, var(--gray));
   opacity: 0.8;
   color: var(--light);
 }
@@ -125,6 +125,19 @@ ol > li {
 
 span {
   color: #ff0000;
+}
+
+.form-row {
+  background: url("https://images.pexels.com/photos/3807755/pexels-photo-3807755.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.form-segment {
+  background: linear-gradient(45deg, #0ff0fb75, var(--gray));
+  opacity: 0.8 ;
+  color: #fff;
 }
 
 footer {
