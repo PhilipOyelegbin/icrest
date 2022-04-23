@@ -58,7 +58,7 @@ body {
 header {
   overflow: hidden;
   height: 100vh;
-  background: url("https://images.pexels.com/photos/5212649/pexels-photo-5212649.jpeg?auto=compress&cs=tinysrgb&h=650&w=940")
+  background: rgba(0, 0, 0, 0.5) url("https://images.pexels.com/photos/5212649/pexels-photo-5212649.jpeg?auto=compress&cs=tinysrgb&h=650&w=940")
     no-repeat;
   background-size: cover;
   background-position: center;
@@ -128,7 +128,7 @@ span {
 }
 
 .form-row {
-  background: url("https://images.pexels.com/photos/3807755/pexels-photo-3807755.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+  background: rgba(0, 0, 0, 0.5) url("https://images.pexels.com/photos/3807755/pexels-photo-3807755.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
     no-repeat;
   background-size: cover;
   background-position: center;
