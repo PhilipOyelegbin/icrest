@@ -58,11 +58,11 @@ body {
 header {
   overflow: hidden;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.7) url("https://images.pexels.com/photos/5212649/pexels-photo-5212649.jpeg?auto=compress&cs=tinysrgb&h=650&w=940")
+  background: rgba(0, 0, 0, 0.5)
+    url("https://images.pexels.com/photos/5212649/pexels-photo-5212649.jpeg?auto=compress&cs=tinysrgb&h=650&w=940")
     no-repeat;
   background-size: cover;
   background-position: center;
-  background-blend-mode: darken;
 }
 
 .banner-text {
@@ -107,6 +107,35 @@ section {
   justify-content: center;
 }
 
+.fade-in {
+  opacity: 0;
+  transition: 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.from-left {
+  grid-column: 2 / 3;
+  transform: translateX(-50%);
+}
+
+.from-right {
+  grid-column: 3 / 4;
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: transform 400ms ease-in;
+}
+
+.from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
+}
+
 .card {
   height: 400px;
 }
@@ -129,16 +158,16 @@ span {
 }
 
 .form-row {
-  background: rgba(0, 0, 0, 0.7) url("https://images.pexels.com/photos/3807755/pexels-photo-3807755.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
+  background: rgba(0, 0, 0, 0.5)
+    url("https://images.pexels.com/photos/3807755/pexels-photo-3807755.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500")
     no-repeat;
   background-size: cover;
   background-position: center;
-  background-blend-mode: darken;
 }
 
 .form-segment {
   background: linear-gradient(45deg, #0ff0fb75, var(--gray));
-  opacity: 0.8 ;
+  opacity: 0.8;
   color: #fff;
 }
 
