@@ -51,7 +51,7 @@ sliders.forEach((slider) => {
 // whatsapp chatbot
 (function () {
   var options = {
-    whatsapp: "https://chat.whatsapp.com/FC8kcwIgzCY71foFBM5c8D", // WhatsApp number
+    whatsapp: "+2347056338226", // WhatsApp number
     call_to_action: "Message us", // Call to action
     position: "left", // Position may be 'right' or 'left'
   };
