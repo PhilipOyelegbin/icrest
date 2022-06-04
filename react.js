@@ -6,13 +6,9 @@ window.addEventListener("load", function () {
 // menu button toggle
 document.getElementById("menu"),
   addEventListener("click", function () {
-    document.getElementById("menuContent").classList.toggle("opacity-100");
-    document.getElementById("close").classList.toggle("block");
-    document.getElementById("harmbuger").classList.toggle("hidden");
-
-    document.getElementById("menuContent").classList.toggle("opacity-0");
-    document.getElementById("harmbuger").classList.toggle("block");
+    document.getElementById("menuContent").classList.toggle("top-[50px]");
     document.getElementById("close").classList.toggle("hidden");
+    document.getElementById("harmbuger").classList.toggle("hidden");
   });
 
 // fading in and sliding in of columns
