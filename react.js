@@ -6,6 +6,7 @@ window.addEventListener("load", function () {
 // menu button toggle
 document.getElementById("menu"),
   addEventListener("click", function () {
+    document.getElementById("menuContent").classList.toggle("opacity-100");
     document.getElementById("menuContent").classList.toggle("top-[50px]");
     document.getElementById("close").classList.toggle("hidden");
     document.getElementById("harmbuger").classList.toggle("hidden");
