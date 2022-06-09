@@ -4,13 +4,12 @@ window.addEventListener("load", function () {
 });
 
 // menu button toggle
-document.getElementById("menu"),
-  addEventListener("click", function () {
+const menu = () => {
     document.getElementById("menuContent").classList.toggle("opacity-100");
     document.getElementById("menuContent").classList.toggle("top-[50px]");
     document.getElementById("close").classList.toggle("hidden");
     document.getElementById("harmbuger").classList.toggle("hidden");
-  });
+  };
 
 // fading in and sliding in of columns
 const faders = document.querySelectorAll(".fade-in");
