@@ -124,10 +124,10 @@
     </header>
 
     <!-- main body with a container -->
-    <main class="container px-5 mx-auto">
+    <main class="container px-2 mx-auto">
       <section class="row">
         <div class="md:w-1/2 md:px-5 slide-in from-left">
-          <p>All the fields are required</p>
+          <h3>All the fields are required</h3>
           <!-- form -->
           <form
             action="https://formsubmit.co/icrestinternational@gmail.com"
@@ -135,30 +135,12 @@
           >
             <input type="hidden" name="_subject" value="New client!" />
             <input type="hidden" name="_captcha" value="false" />
-            <input
-              type="text"
-              name="Name"
-              id="name"
-              placeholder="Full Name &star;"
-              require
-            />
-            <input
-              type="email"
-              name="Email"
-              id="email"
-              placeholder="example@mail.com &star;"
-              require
-            />
-            <textarea
-              name="Comment"
-              class="w-full border-2 p-4 rounded-lg"
-              id="comment"
-              cols="30"
-              rows="5"
-              placeholder="Write your comment here... &star;"
-              require
-            ></textarea>
-            <input class="btn md:w-auto" type="submit" value="SEND" />
+            
+            <input type="text" name="Name" class="border-black text-xl" placeholder="Full Name &star;" require/>
+            <input type="email" name="Email" class="border-black text-xl" placeholder="example@mail.com &star;" require/>
+            <textarea name="Comment" class="border-black text-xl" cols="30" rows="5" placeholder="Write your comment here... &star;" required></textarea>
+
+            <button class="btn" type="submit">SEND</button>
           </form>
         </div>
         <div class="md:w-1/2 slide-in from-right">
@@ -174,7 +156,7 @@
       <!-- other contact options -->
       <section class="row text-center">
         <small
-          class="text-blue-400 fade-in flex items-center mb-3 md:mb-0 md:mr-2"
+          class="text-blue-400 text-[16px] fade-in flex items-center mb-3 md:mb-0 md:mr-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -193,7 +175,7 @@
           16 Williams Surulere, Lagos
         </small>
         <small
-          class="text-blue-400 fade-in flex items-center mb-3 md:mb-0 md:mr-2"
+          class="text-blue-400 text-[16px] fade-in flex items-center mb-3 md:mb-0 md:mr-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -213,7 +195,7 @@
           +2348091622842
         </small>
         <small
-          class="text-blue-400 fade-in flex items-center mb-3 md:mb-0 md:mr-2"
+          class="text-blue-400 text-[16px] fade-in flex items-center mb-3 md:mb-0 md:mr-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -231,7 +213,7 @@
           icrestinternational@gmail.com
         </small>
         <small
-          class="text-blue-400 fade-in flex items-center mb-3 md:mb-0 md:mr-2"
+          class="text-blue-400 text-[16px] fade-in flex items-center mb-3 md:mb-0 md:mr-2"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -247,7 +229,7 @@
           </svg>
           icrestinternationalconsult
         </small>
-        <small class="text-blue-400 fade-in flex items-center">
+        <small class="text-blue-400 text-[16px] fade-in flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"

@@ -46,15 +46,15 @@ body {
   }
 
   h3 {
-    @apply text-xl font-bold text-center;
+    @apply text-xl md:text-2xl font-bold text-center;
   }
 
   p {
-    @apply text-justify text-xl font-light;
+    @apply text-left text-xl font-light;
   }
 
-  input {
-    @apply p-4 w-full border-2 mb-2 rounded-lg;
+  input, select, textarea {
+    @apply p-2 w-full border-b border-white mb-2 rounded-md bg-inherit outline-none;
   }
 }
 
@@ -75,12 +75,16 @@ body {
     @apply md:flex md:justify-between md:items-center py-5;
   }
 
+  .form-group {
+    @apply flex flex-col lg:flex-row items-center gap-3 text-xl mb-2;
+  }
+
   .btn {
-    @apply bg-gradient-to-tr from-blue-800 to-blue-400 hover:bg-gradient-to-bl hover:from-blue-800 hover:to-blue-400 text-gray-100 text-2xl md:self-start text-center rounded-full px-4 py-2;
+    @apply bg-gradient-to-tr from-blue-800 to-blue-400 hover:bg-gradient-to-bl hover:from-blue-800 hover:to-blue-400 text-slate-100 text-2xl text-center rounded-md px-5 py-2;
   }
 
   .card {
-    @apply hover:box-border hover:shadow-xl hover:shadow-blue-300 items-center overflow-y-scroll h-80;
+    @apply hover:box-border hover:shadow-xl hover:shadow-blue-300 items-center overflow-y-scroll h-[450px];
   }
 
   .cardBody {
