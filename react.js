@@ -1,12 +1,15 @@
-(function () {
-  "use strict";
+// preloader action
+window.addEventListener("load", function () {
+  document.getElementById("loader").style.display = "none";
+});
 
-  document
-    .querySelector("#navbarSideCollapse")
-    .addEventListener("click", function () {
-      document.querySelector(".offcanvas-collapse").classList.toggle("open");
-    });
-})();
+// menu button toggle
+const menu = () => {
+    document.getElementById("menuContent").classList.toggle("opacity-100");
+    document.getElementById("menuContent").classList.toggle("top-[50px]");
+    document.getElementById("close").classList.toggle("hidden");
+    document.getElementById("harmbuger").classList.toggle("hidden");
+  };
 
 // fading in and sliding in of columns
 const faders = document.querySelectorAll(".fade-in");
@@ -15,7 +18,7 @@ const sliders = document.querySelectorAll(".slide-in");
 
 const appearOptions = {
   threshold: 0,
-  rootMargin: "0px 0px -250px 0px",
+  rootMargin: "0px 0px -200px 0px",
 };
 
 const appearOnScroll = new IntersectionObserver(function (
@@ -32,6 +35,7 @@ const appearOnScroll = new IntersectionObserver(function (
   });
 },
 appearOptions);
+
 faders.forEach((fader) => {
   appearOnScroll.observe(fader);
 });
@@ -40,8 +44,7 @@ sliders.forEach((slider) => {
   appearOnScroll.observe(slider);
 });
 
-//
-
+// whatsapp chatbot
 (function () {
   var options = {
     whatsapp: "+2347056338226", // WhatsApp number
